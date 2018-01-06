@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3E2414B20010C5200A4F8A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */; };
+		F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */; };
+		F3E2415020010C5200A4F8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2414E20010C5200A4F8A9 /* Main.storyboard */; };
+		F3E2415320010C5300A4F8A9 /* CaelumIP67.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F3E2415120010C5300A4F8A9 /* CaelumIP67.xcdatamodeld */; };
+		F3E2415520010C5300A4F8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3E2415420010C5300A4F8A9 /* Assets.xcassets */; };
+		F3E2415820010C5300A4F8A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2415620010C5300A4F8A9 /* LaunchScreen.storyboard */; };
+		F3E24164200132A900A4F8A9 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E24163200132A900A4F8A9 /* Contato.m */; };
+		F3E241662001477800A4F8A9 /* ContatoDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E241652001477800A4F8A9 /* ContatoDao.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3E2414720010C5200A4F8A9 /* CaelumIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaelumIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewController.swift; sourceTree = "<group>"; };
+		F3E2414F20010C5200A4F8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3E2415220010C5300A4F8A9 /* CaelumIP67.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaelumIP67.xcdatamodel; sourceTree = "<group>"; };
+		F3E2415420010C5300A4F8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3E2415720010C5300A4F8A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3E2415920010C5300A4F8A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3E24161200132A900A4F8A9 /* CaelumIP67-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CaelumIP67-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3E24162200132A900A4F8A9 /* Contato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Contato.h; path = ../Contato.h; sourceTree = "<group>"; };
+		F3E24163200132A900A4F8A9 /* Contato.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Contato.m; path = ../Contato.m; sourceTree = "<group>"; };
+		F3E241652001477800A4F8A9 /* ContatoDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContatoDao.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3E2414420010C5200A4F8A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3E2413E20010C5200A4F8A9 = {
+			isa = PBXGroup;
+			children = (
+				F3E2414920010C5200A4F8A9 /* CaelumIP67 */,
+				F3E2414820010C5200A4F8A9 /* Products */,
+				F3E24161200132A900A4F8A9 /* CaelumIP67-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		F3E2414820010C5200A4F8A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3E2414720010C5200A4F8A9 /* CaelumIP67.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3E2414920010C5200A4F8A9 /* CaelumIP67 */ = {
+			isa = PBXGroup;
+			children = (
+				F3E24162200132A900A4F8A9 /* Contato.h */,
+				F3E24163200132A900A4F8A9 /* Contato.m */,
+				F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */,
+				F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */,
+				F3E2414E20010C5200A4F8A9 /* Main.storyboard */,
+				F3E2415420010C5300A4F8A9 /* Assets.xcassets */,
+				F3E2415620010C5300A4F8A9 /* LaunchScreen.storyboard */,
+				F3E2415920010C5300A4F8A9 /* Info.plist */,
+				F3E2415120010C5300A4F8A9 /* CaelumIP67.xcdatamodeld */,
+				F3E241652001477800A4F8A9 /* ContatoDao.swift */,
+			);
+			path = CaelumIP67;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3E2414620010C5200A4F8A9 /* CaelumIP67 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3E2415C20010C5300A4F8A9 /* Build configuration list for PBXNativeTarget "CaelumIP67" */;
+			buildPhases = (
+				F3E2414320010C5200A4F8A9 /* Sources */,
+				F3E2414420010C5200A4F8A9 /* Frameworks */,
+				F3E2414520010C5200A4F8A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaelumIP67;
+			productName = CaelumIP67;
+			productReference = F3E2414720010C5200A4F8A9 /* CaelumIP67.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3E2413F20010C5200A4F8A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Caelum;
+				TargetAttributes = {
+					F3E2414620010C5200A4F8A9 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F3E2414220010C5200A4F8A9 /* Build configuration list for PBXProject "CaelumIP67" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3E2413E20010C5200A4F8A9;
+			productRefGroup = F3E2414820010C5200A4F8A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3E2414620010C5200A4F8A9 /* CaelumIP67 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3E2414520010C5200A4F8A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E2415820010C5300A4F8A9 /* LaunchScreen.storyboard in Resources */,
+				F3E2415520010C5300A4F8A9 /* Assets.xcassets in Resources */,
+				F3E2415020010C5200A4F8A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3E2414320010C5200A4F8A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3E24164200132A900A4F8A9 /* Contato.m in Sources */,
+				F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */,
+				F3E241662001477800A4F8A9 /* ContatoDao.swift in Sources */,
+				F3E2415320010C5300A4F8A9 /* CaelumIP67.xcdatamodeld in Sources */,
+				F3E2414B20010C5200A4F8A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3E2414E20010C5200A4F8A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E2414F20010C5200A4F8A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3E2415620010C5300A4F8A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3E2415720010C5300A4F8A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3E2415A20010C5300A4F8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3E2415B20010C5300A4F8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3E2415D20010C5300A4F8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CaelumIP67/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.CaelumIP67;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CaelumIP67-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F3E2415E20010C5300A4F8A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CaelumIP67/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.CaelumIP67;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CaelumIP67-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3E2414220010C5200A4F8A9 /* Build configuration list for PBXProject "CaelumIP67" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E2415A20010C5300A4F8A9 /* Debug */,
+				F3E2415B20010C5300A4F8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3E2415C20010C5300A4F8A9 /* Build configuration list for PBXNativeTarget "CaelumIP67" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3E2415D20010C5300A4F8A9 /* Debug */,
+				F3E2415E20010C5300A4F8A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F3E2415120010C5300A4F8A9 /* CaelumIP67.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F3E2415220010C5300A4F8A9 /* CaelumIP67.xcdatamodel */,
+			);
+			currentVersion = F3E2415220010C5300A4F8A9 /* CaelumIP67.xcdatamodel */;
+			path = CaelumIP67.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F3E2413F20010C5200A4F8A9 /* Project object */;
+}
