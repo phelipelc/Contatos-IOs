@@ -23,9 +23,24 @@ class ContatoDao: NSObject {
         }
             return defaultDAO
     }
-            override private init(){
-            self.contatos = Array()
-            super.init()
-            }
     
+   
+    override private init(){
+        contatos = Array()
+        super.init()
+    }
+    
+    func listaTodos() -> [Contato] {
+        return contatos
+    }
+    
+    func buscaContatoNaPosicao(_ posicao: Int) -> Contato {
+        return contatos[posicao]
+    }
+    func remove(_ posicao:Int){
+    contatos.remove(at: posicao)
+    }
+    func buscaPosicaoDoContato(_ contato:Contato) -> Int {
+    return contatos.index(of: contato)!
+    }
 }

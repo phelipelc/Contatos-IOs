@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wgj-yB-x78">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Formulario Contato View Controller-->
+        <!--Cadastro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="FormularioContatoViewController" customModule="CaelumIP67" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Form-Contato" title="Cadastro" id="BYZ-38-t0r" customClass="FormularioContatoViewController" customModule="CaelumIP67" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -74,27 +74,80 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0r-cp-R6H">
-                                <frame key="frameInset" minX="148" minY="292" width="79" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Adicionar"/>
-                                <connections>
-                                    <action selector="pegarDadosDoFormulario" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Mx-7i-wJE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Cadastro" id="6Hx-EW-gDR">
+                        <barButtonItem key="rightBarButtonItem" title="Adicionar" id="yCb-6f-UMb">
+                            <connections>
+                                <action selector="criaContato" destination="BYZ-38-t0r" id="MR1-ea-b8O"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="endereco" destination="yrX-VZ-zLo" id="CxP-vo-dBK"/>
                         <outlet property="nome" destination="OJ6-OL-fy7" id="FVZ-1u-tXq"/>
-                        <outlet property="siteText" destination="4LU-Pz-jxn" id="pqI-x5-RNc"/>
+                        <outlet property="siteText" destination="vSx-DX-IFT" id="lci-3Z-REa"/>
                         <outlet property="telefone" destination="ObY-4I-4Ze" id="ncy-zg-Bod"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48.799999999999997" y="46.326836581709152"/>
+            <point key="canvasLocation" x="105" y="27"/>
+        </scene>
+        <!--Contatos-->
+        <scene sceneID="IK6-c3-ncw">
+            <objects>
+                <tableViewController id="XVE-m0-alT" customClass="ListarContatosViewController" customModule="CaelumIP67" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Zkn-q3-eRF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="PGm-fv-bQD">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PGm-fv-bQD" id="8Lk-mX-QJe">
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XVE-m0-alT" id="8Uu-dI-VN3"/>
+                            <outlet property="delegate" destination="XVE-m0-alT" id="npK-sN-y4f"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Contatos" id="Rh9-lC-fFU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="jiR-qg-3af">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="FormSegue" id="Ekh-Ez-OqG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GWA-bn-cL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tsE-D2-8wC">
+            <objects>
+                <navigationController id="wgj-yB-x78" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0wB-Sn-PcE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="XVE-m0-alT" kind="relationship" relationship="rootViewController" id="AGk-3C-0Vk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fDW-CZ-9on" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1334" y="27"/>
         </scene>
     </scenes>
 </document>

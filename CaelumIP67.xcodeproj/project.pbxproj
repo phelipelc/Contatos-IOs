@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C07F5BB3200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */; };
+		C0DD030D200A23D800DE5EBE /* ListarContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */; };
 		F3E2414B20010C5200A4F8A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */; };
 		F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */; };
 		F3E2415020010C5200A4F8A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3E2414E20010C5200A4F8A9 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewControllerDelegate.swift; sourceTree = "<group>"; };
+		C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarContatosViewController.swift; sourceTree = "<group>"; };
 		F3E2414720010C5200A4F8A9 /* CaelumIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaelumIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewController.swift; sourceTree = "<group>"; };
@@ -67,7 +71,9 @@
 				F3E24163200132A900A4F8A9 /* Contato.m */,
 				F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */,
 				F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */,
+				C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */,
 				F3E2414E20010C5200A4F8A9 /* Main.storyboard */,
+				C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */,
 				F3E2415420010C5300A4F8A9 /* Assets.xcassets */,
 				F3E2415620010C5300A4F8A9 /* LaunchScreen.storyboard */,
 				F3E2415920010C5300A4F8A9 /* Info.plist */,
@@ -150,7 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DD030D200A23D800DE5EBE /* ListarContatosViewController.swift in Sources */,
 				F3E24164200132A900A4F8A9 /* Contato.m in Sources */,
+				C07F5BB3200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift in Sources */,
 				F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */,
 				F3E241662001477800A4F8A9 /* ContatoDao.swift in Sources */,
 				F3E2415320010C5300A4F8A9 /* CaelumIP67.xcdatamodeld in Sources */,
