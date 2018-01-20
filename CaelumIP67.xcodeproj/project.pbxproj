@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C07F5BB3200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */; };
+		C0D840D4201364B00041F364 /* GerenciadorDeAcoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D840D3201364B00041F364 /* GerenciadorDeAcoes.swift */; };
 		C0DD030D200A23D800DE5EBE /* ListarContatosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */; };
 		F3E2414B20010C5200A4F8A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */; };
 		F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewControllerDelegate.swift; sourceTree = "<group>"; };
+		C0D840D3201364B00041F364 /* GerenciadorDeAcoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeAcoes.swift; sourceTree = "<group>"; };
 		C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListarContatosViewController.swift; sourceTree = "<group>"; };
 		F3E2414720010C5200A4F8A9 /* CaelumIP67.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaelumIP67.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3E2414A20010C5200A4F8A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */,
 				F3E2414E20010C5200A4F8A9 /* Main.storyboard */,
 				C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */,
+				C0D840D3201364B00041F364 /* GerenciadorDeAcoes.swift */,
 				F3E2415420010C5300A4F8A9 /* Assets.xcassets */,
 				F3E2415620010C5300A4F8A9 /* LaunchScreen.storyboard */,
 				F3E2415920010C5300A4F8A9 /* Info.plist */,
@@ -115,6 +118,7 @@
 				TargetAttributes = {
 					F3E2414620010C5200A4F8A9 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 4SPVN6BRY3;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -157,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0DD030D200A23D800DE5EBE /* ListarContatosViewController.swift in Sources */,
+				C0D840D4201364B00041F364 /* GerenciadorDeAcoes.swift in Sources */,
 				F3E24164200132A900A4F8A9 /* Contato.m in Sources */,
 				C07F5BB3200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift in Sources */,
 				F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */,
@@ -284,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4SPVN6BRY3;
 				INFOPLIST_FILE = CaelumIP67/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.CaelumIP67;
@@ -299,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 4SPVN6BRY3;
 				INFOPLIST_FILE = CaelumIP67/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.caelum.CaelumIP67;

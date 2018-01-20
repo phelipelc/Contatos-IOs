@@ -8,11 +8,12 @@
 
 import UIKit
 
-class FormularioContatoViewController: UIViewController {
+class FormularioContatoViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     @IBOutlet weak var nome: UITextField!
     @IBOutlet weak var telefone: UITextField!
     @IBOutlet weak var endereco: UITextField!
     @IBOutlet weak var siteText: UITextField!
+    @IBOutlet weak var imageView: UIImageView!
    
     var delegate: FormularioContatoViewControllerDelegate?
     var dao: ContatoDao
@@ -32,12 +33,25 @@ class FormularioContatoViewController: UIViewController {
             self.endereco.text = contato.endereco
             self.siteText.text = contato.site
             
+            if let foto = self.contato.foto {
+            imageView.image = contato.foto
+            }
+            
             let botaoAlterar = UIBarButtonItem(title: "Confirmar", style: .plain, target: self,
                                                action: #selector(atualizaContato))
             
             self.navigationItem.rightBarButtonItem = botaoAlterar
+            
         }
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(selecionaFoto(sender: )))
+        
+        self.imageView.addGestureRecognizer(tap)
+
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,11 +64,11 @@ class FormularioContatoViewController: UIViewController {
             self.contato = Contato()
         }
         
-        
         contato.nome = nome.text!
         contato.telefone = telefone.text!
         contato.endereco = endereco.text!
         contato.site = siteText.text!
+        contato.foto = imageView.image
         
     }
     
@@ -69,6 +83,29 @@ class FormularioContatoViewController: UIViewController {
     pegarDadosDoFormulario()
         self.delegate?.contatoAtualizado(contato)
         self.navigationController?.popViewController(animated: true)
+    }
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        if let imagemSelecionada = info[UIImagePickerControllerEditedImage] as? UIImage {
+            self.imageView.image = imagemSelecionada
+            
+        }
+        picker.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    func selecionaFoto(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+        
+        }else{
+        
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = true
+            imagePicker.delegate = self
+            
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
 
