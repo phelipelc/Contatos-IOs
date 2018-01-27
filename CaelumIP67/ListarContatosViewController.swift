@@ -97,10 +97,12 @@ class ListarContatosViewController: UITableViewController, FormularioContatoView
     func contatoAtualizado(_ contato: Contato) {
         self.linhaDestaque = IndexPath(row: dao.buscaPosicaoDoContato(contato), section: 0)
         print("Contato atualizado: \(contato.nome)")
+        ContatoDao.sharedInstance().saveContext()
     }
     func contatoAdicionado(_ contato: Contato) {
         self.linhaDestaque = IndexPath(row: dao.buscaPosicaoDoContato(contato), section: 0)
         print("Contato adicionado: \(contato.nome)")
+        ContatoDao.sharedInstance().saveContext()
     }
     func exibirMaisAcoes(gesture: UIGestureRecognizer){
         if gesture.state == .began{

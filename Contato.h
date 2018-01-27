@@ -8,12 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@interface Contato : NSObject
+#import <MapKit/MKAnnotation.h>
+#import <CoreData/CoreData.h>
+@interface Contato : NSManagedObject <MKAnnotation>
 
 @property (strong)  NSString *nome;
 @property (strong)  NSString *telefone;
 @property (strong)  NSString *endereco;
 @property (strong)  NSString *site;
 @property (strong)  UIImage  *foto;
+@property (strong) NSNumber *latitude;
+@property (strong) NSNumber *longitude;
+
 
 @end
