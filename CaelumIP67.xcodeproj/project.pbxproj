@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C96AFED0B2F808DE16FB460 /* Pods_CaelumIP67.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E2CFC8CB35349C41AF7995 /* Pods_CaelumIP67.framework */; };
+		C04930E62025DDA5006451D2 /* TemperaturaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04930E52025DDA5006451D2 /* TemperaturaViewController.swift */; };
 		C0595AFF201CE2360053A7E6 /* CoreDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0595AFE201CE2360053A7E6 /* CoreDataUtil.swift */; };
 		C07F5BB3200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */; };
 		C0D840D4201364B00041F364 /* GerenciadorDeAcoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D840D3201364B00041F364 /* GerenciadorDeAcoes.swift */; };
@@ -28,6 +29,7 @@
 		00E2CFC8CB35349C41AF7995 /* Pods_CaelumIP67.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CaelumIP67.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FD80FE2194CEB5F3B6B783 /* Pods-CaelumIP67.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaelumIP67.release.xcconfig"; path = "Pods/Target Support Files/Pods-CaelumIP67/Pods-CaelumIP67.release.xcconfig"; sourceTree = "<group>"; };
 		8EEB5EB4A7798603ABC19DAD /* Pods-CaelumIP67.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CaelumIP67.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CaelumIP67/Pods-CaelumIP67.debug.xcconfig"; sourceTree = "<group>"; };
+		C04930E52025DDA5006451D2 /* TemperaturaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperaturaViewController.swift; sourceTree = "<group>"; };
 		C0595AFE201CE2360053A7E6 /* CoreDataUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataUtil.swift; sourceTree = "<group>"; };
 		C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormularioContatoViewControllerDelegate.swift; sourceTree = "<group>"; };
 		C0D840D3201364B00041F364 /* GerenciadorDeAcoes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenciadorDeAcoes.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F3E2414C20010C5200A4F8A9 /* FormularioContatoViewController.swift */,
 				C07F5BB2200A80A00073C084 /* FormularioContatoViewControllerDelegate.swift */,
 				F3E2414E20010C5200A4F8A9 /* Main.storyboard */,
+				C04930E52025DDA5006451D2 /* TemperaturaViewController.swift */,
 				C0F565662013ACAF0036A4CD /* ContatosNoMapaViewController.swift */,
 				C0F565682013B7EE0036A4CD /* Vila Mariana.gpx */,
 				C0DD030C200A23D800DE5EBE /* ListarContatosViewController.swift */,
@@ -258,6 +261,7 @@
 				F3E2414D20010C5200A4F8A9 /* FormularioContatoViewController.swift in Sources */,
 				F3E241662001477800A4F8A9 /* ContatoDao.swift in Sources */,
 				F3E2415320010C5300A4F8A9 /* CaelumIP67.xcdatamodeld in Sources */,
+				C04930E62025DDA5006451D2 /* TemperaturaViewController.swift in Sources */,
 				C0595AFF201CE2360053A7E6 /* CoreDataUtil.swift in Sources */,
 				F3E2414B20010C5200A4F8A9 /* AppDelegate.swift in Sources */,
 			);
